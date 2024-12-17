@@ -5,7 +5,10 @@
 <hr>
 
 <div>
-  <a href="/movies/new">Add a new movie</a>
+  <%= movie_url(43) %>
+</div>
+<div>
+  <%= link_to "Add a new movie", new_movie_path %>
 </div>
 
 <hr>
@@ -58,9 +61,7 @@
     </td>
 
     <td>
-      <a href="/movies/<%= a_movie.id %>">
-        Show details
-      </a>
+      <%= link_to "Show details", a_movie %>
     </td>
   </tr>
   <% end %>
